@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    azure:
+      active-directory:
+        b2c:
+          enabled: true
+          base-uri: https://practiseinazureapp.b2clogin.com/practiseinazureapp.onmicrosoft.com/
+          credential:
+            client-id: cedba9b1-2209-410f-be4d-67aeded8104d
+            client-secret: WOe8Q~BEUNt_jq8VZxebzIPiI11se-8IGY0eubV2
+          login-flow: sign-up-or-sign-in
+  
+          user-flows:
+            sign-up-or-sign-in: B2C_1_PractiseUser 
+            
